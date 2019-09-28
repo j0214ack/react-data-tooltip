@@ -1,10 +1,13 @@
 {
   "name": "react-data-tooltip",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Add `data-tooltip` in any element to get a nice tooltip with <ReactDataTooltip /> mounted somewhere in the document",
   "main": "lib/index.js",
-  "dependencies": {
-    "12": "^1.0.2"
+  "peerDependencies": {
+    "react": ">=16",
+    "react-dom": ">=16",
+    "styled-components": ">=4",
+    "uuid": ">=3.3.3"
   },
   "devDependencies": {
     "@babel/cli": "^7.6.2",
@@ -25,7 +28,7 @@
   "scripts": {
     "test": "jest",
     "test:watch": "jest --watch",
-    "build": "rm -rf ./lib/* && babel src --out-file lib/index.js --ignore '**/*.test.js'"
+    "build": "rm -rf ./lib/* && babel src -d lib --ignore '**/*.test.js'"
   },
   "jest": {
     "setupFiles": [
