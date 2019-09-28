@@ -1,6 +1,6 @@
 {
   "name": "react-data-tooltip",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Add `data-tooltip` in any element to get a nice tooltip with <ReactDataTooltip /> mounted somewhere in the document",
   "main": "lib/index.js",
   "peerDependencies": {
