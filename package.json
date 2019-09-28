@@ -1,0 +1,51 @@
+{
+  "name": "react-data-tooltip",
+  "version": "1.0.0",
+  "description": "Add `data-tooltip` in any element to get a nice tooltip with <ReactDataTooltip /> mounted somewhere in the document",
+  "main": "lib/index.js",
+  "dependencies": {
+    "12": "^1.0.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.6.2",
+    "@babel/core": "^7.6.2",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/preset-env": "^7.6.2",
+    "@babel/preset-react": "^7.0.0",
+    "@testing-library/react": "^9.2.0",
+    "jest": "^24.9.0",
+    "jest-canvas-mock": "^2.1.1",
+    "jest-styled-components": "^6.3.3",
+    "mutationobserver-shim": "^0.3.3",
+    "react": "^16.10.0",
+    "react-dom": "^16.10.0",
+    "styled-components": "^4.4.0",
+    "uuid": "^3.3.3"
+  },
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "build": "rm -rf ./lib/* && babel src --out-file lib/index.js --ignore '**/*.test.js'"
+  },
+  "jest": {
+    "setupFiles": [
+      "jest-canvas-mock"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/j0214ack/react-data-tooltip.git"
+  },
+  "keywords": [
+    "react",
+    "js",
+    "tooltip",
+    "dataset"
+  ],
+  "author": "Yo Chen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/j0214ack/react-data-tooltip/issues"
+  },
+  "homepage": "https://github.com/j0214ack/react-data-tooltip#readme"
+}
